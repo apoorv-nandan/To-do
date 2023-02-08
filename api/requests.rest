@@ -1,0 +1,27 @@
+GET http://localhost:3001/todos HTTP/1.1
+
+###
+
+POST http://localhost:3001/todo/new
+Content-Type: application/json
+
+{
+	"text": "Pick up boat"
+}
+
+###
+
+DELETE http://localhost:3001/todo/delete/63dfe690da02cfc35fb880d2
+
+###
+
+GET http://localhost:3001/todo/complete/63dff0f3101148a1755d7fde
+
+###
+
+PUT http://localhost:3001/todo/update/63dff0f3101148a1755d7fde
+Content-Type: application/json
+
+{
+	"text": "Go Shopping"
+}
